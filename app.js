@@ -192,7 +192,7 @@ function takeCommand(message) {
     }  else if  (message.includes('Good Evening')) {
         speak("Good Evening Sir,How may I help You");
     }  else if  (message.includes('mail')) {
-        speak("https://mail.google.com/mail/u/0/#inbox","_blank");
+        window.open("https://mail.google.com/mail", "_blank");
     }
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
